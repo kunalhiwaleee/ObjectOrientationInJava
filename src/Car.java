@@ -1,3 +1,4 @@
+// Example of Dyanmic Polymorphism, Inheritance and Generalization
 public class Car extends Vehicle {
 
     int totalCapacity;
@@ -17,6 +18,12 @@ public class Car extends Vehicle {
     
     public void openTrunk() {
         System.out.println(brand + " trunk opened.");
+    }
+
+
+    @Override
+    public String toString() {
+        return "Car toString Called";
     }
 
 }

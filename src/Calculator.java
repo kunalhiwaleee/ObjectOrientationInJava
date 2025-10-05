@@ -7,13 +7,13 @@ public class Calculator {
     // Only depends on parameter not on datatype
     // main method can be overloaded, But JVM will only call the standard signature (public static void main(String[] args)) as the program’s starting point. and other main function is helper function
     
-
-    int add(int a, int b) {
-        return a + b;
-    }
-
-    int add(int a,int b,int c) {
+    int add(int a ,int b,int c) {
         return a + b + c;
+    }
+    
+    double add(double a, int b) {
+        System.out.println("First is Double and Second is Integer");
+        return a + b;
     }
 
     double add(double a,double b) {
@@ -33,9 +33,8 @@ public class Calculator {
 
     public static void main(String[] args) {
         Calculator calc = new Calculator();
+        System.out.println(calc.add(0, 0, 0));
 
-        double results = calc.add(4 , 5.0);
-        System.out.println(results);
 
     }
 

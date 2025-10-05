@@ -1,0 +1,23 @@
+Polymorphism : Poly - many , morphism - way to represent. Many way to represent one thing
+
+Two types of polymorphism (Two ways to achieve polymorphism):
+
+	1) Compile-Time Polymorphism / Static Polymorphism / Method Overloading :
+		○ Two or more method have same name but different parameter (i.e  no of parameter, order of parameter, datatype of parameter) 
+		○ It is also called false polymorphism, it might see one function represented by many ways but it's not. 
+		○ Java Compiler will resolve at the time of compile time based on no of parameter, datatypes of parameter and order of parameter
+		○ Only depends on parameter not on datatype
+		○ main method can be overloaded, But JVM will only call the standard signature (public static void main(String[] args)) as the program’s starting point. and other main function is helper function
+        
+	2) Run-Time Polymorphism / Dynamic Polymorphism : Achieved via Method Overriding
+		○ When a child class (subclass) has method with same name, same parameter as it's of parent class (superclass) but with its own functionality.
+		○ JVM will resolve at runtime which method to run based on the type of object , not the reference type. This process also called as Dynamic Memory Dispatch because method call decided dynamically at runtime
+		○ Static method cannot be overridden because static method doesn’t belong to object. It called using the class name, they are resolved at compile time, not at runtime. (main method cannot be overridden)
+		○ Final method cannot be overridden because this method’s behavior is complete and cannot be changed by any subclass.
+		
+Generalization : Generalization means extracting shared features (fields or methods) from two or more classes and putting them into a common superclass
+Purpose of Generalization
+	• ✅ Avoids code duplication
+	• ✅ Improves reusability
+	• ✅ Makes the system more organized and modular
+	• ✅ Supports polymorphism
