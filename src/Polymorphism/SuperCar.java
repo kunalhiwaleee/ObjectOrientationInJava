@@ -1,3 +1,4 @@
+package Polymorphism;
 public class SuperCar extends Car {
 
     final private static int totalCapacity = 2;

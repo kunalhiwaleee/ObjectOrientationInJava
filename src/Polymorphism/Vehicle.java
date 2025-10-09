@@ -1,4 +1,5 @@
-public class Vehicle {
+package Polymorphism;
+public abstract class Vehicle {
     String brand;
     int speed;
 
@@ -10,9 +11,7 @@ public class Vehicle {
         this.speed = speed;
     }
 
-    public void start() {
-        System.out.println(brand + " vehicle starts at " + speed + " km/h.");
-    }    
+    public abstract void start();  
 
     public void stop() {
         System.out.println(brand + " vehicle stops.");
@@ -22,3 +21,4 @@ public class Vehicle {
         System.out.println("Brand: " + brand + ", Speed: " + speed + " km/h");
     }
 }
+

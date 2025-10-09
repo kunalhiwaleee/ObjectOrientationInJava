@@ -1,13 +1,19 @@
+package Polymorphism;
 // Example of Dyanmic Polymorphism, Inheritance and Generalization
-public class Car extends Vehicle {
 
-    int totalCapacity;
+public class Car implements Vehicle{
+
+    private int totalCapacity;
+    private String brand;
+    public int speed; 
+    
 
     public Car() {
     }
 
     public Car(int totalCapacity, String brand, int speed) {
-        super(brand, speed);
+        this.brand = brand;
+        
         this.totalCapacity = totalCapacity;
     }
 
@@ -20,10 +26,5 @@ public class Car extends Vehicle {
         System.out.println(brand + " trunk opened.");
     }
 
-
-    @Override
-    public String toString() {
-        return "Car toString Called";
-    }
-
+    
 }
